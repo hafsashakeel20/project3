@@ -1,8 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-        Hello HTML project - 3
-    </body>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register Page</title>
+  </head>
+  <body>
+    <h3>Assignment 2 Network Register</h3>
+    <header>Join Our Network</header>
+    
+    <br />
+    <br />
+    <section>
+        <form action="myregisterhandle.asp" method="post">
+            <label for="Fname">First Name:</label>
+            <input type="text" name="Fname" value="Enter your first name" />&nbsp;
+            <label for="Lname">Last Name:</label>
+            <input type="text" name="Lname" value="Enter your last name" /><br /><br />
+            <label for="username">Email:</label>
+            <input type="email" name="username" value="Enter your email" />&nbsp;
+            <label for="address">Address Line-1:</label>
+            <input type="text" name="address" value="Locality/House/Street no." /><br /><br />
+            <label for="address">Address Line-2:</label>
+            <input type="text" name="address" value="Village/City Name" />&nbsp;
+            <label for="state">State:</label>
+            <input type="text" name="state" value="Enter your state name" />&nbsp;
+            <label for="code">Postal-Code:</label>
+            <input type="text" name="code" value="Postal-Code" minlength="6" /><br /><br />
+            <label for="country">Country</label>
+            <select>
+                <option value="c1">Afghanistan</option>
+                <option value="c2">Argentina</option>
+                <option value="c3">Australia</option>
+                <option value="c4">Amsterdam</option>
+                <option value="c5">Baltimore</option>
+                <option value="c6">Beijing</option>
+                <option value="c7">Bhutan</option>
+                <option value="c8">Bulgaria</option>
+                <option value="c9">China</option>
+                <option value="c10">Chile</option>
+                <option value="c11">Cambodia</option>
+                <option value="c12">Canada</option>
+            </select>&nbsp;
+            <label for="birthdate">Date Of Birth:</label>
+            <input type="month" name="birthday" value="mm/dd/yyyy" /><br /><br />
+            <label for="gender">Gender:</label>
+            <select>
+                <option value="g1">Male</option>
+                <option value="g2">Female</option>
+                <option value="g3">Other</option>
+            </select>&nbsp;
+            <label for="Ccode">Country Code</label>
+            <select>
+                <option value="cc1">Afghanistan(+70)</option>
+                <option value="cc2">Argentina(+2)</option>
+                <option value="cc3">Australia(+56)</option>
+                <option value="cc4">Amsterdam(+3)</option>
+                <option value="cc5">Baltimore(+1)</option>
+                <option value="cc6">Beijing(+8)</option>
+                <option value="cc7">Bhutan(+077)</option>
+                <option value="cc8">Bulgaria(+54)</option>
+                <option value="cc9">China(+8)</option>
+                <option value="cc10">Chile(+6)</option>
+                <option value="cc11">Cambodia(+87)</option>
+                <option value="cc12">Canada(+2)</option>
+            </select>&nbsp;
+            <label for="no.">Phone:</label>
+            <input type="number" name="no." value="Enter your Contact no." /><br /><br />
+                     
+            <label for="password">Password:</label>
+            <input type="password" name="password" value="Enter your password" />&nbsp;
+            <label for="password">Confirm Password:</label>
+            <input type="password" name="password" value="Re-enter your password" />&nbsp;
+            <br />
+            <br />
+            <input type="checkbox" name="box1" value=""> I accept all terms and conditions &nbsp;&nbsp;
+            <input type="submit" value="Submit" />
+
+        </form>
+    </section>
+  </body>
 </html>
